@@ -1,0 +1,243 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.cart-outer{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 244, 253);
+    padding-top: 180px;
+
+    display: flex;
+   flex-wrap: wrap;
+    gap: 60px;   
+}
+
+.cart-outer > h1{
+    width: 100%;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 52px;
+    letter-spacing: 1.4px;
+    word-spacing: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cart-outer > .left{
+    min-height: 50vh;
+    width: 40%;
+    background-color: white;
+    margin-left: 10%;
+    box-shadow: 2px 2px 2px ;
+    border-radius: 8px;
+}
+
+.cart-outer > .left > .box{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 4px;
+    border-bottom: 1.7px solid black;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px 0;
+
+}
+
+.cart-outer > .left > .box:hover{
+     box-shadow: 5px 4px 10px rgba(0,0,0,0.15);
+     transition: 0.3s;
+}
+
+.cart-outer > .left > .box > .left-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    gap: 20px;
+
+}
+
+.cart-outer > .left > .box > .left-part >  img{
+    height: 160px;
+    width: 150px;
+    padding: 10px;
+    padding-right: 20px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.cart-outer > .left > .box > .left-part > .qty {
+    display: flex;
+    gap: 8px;
+}
+
+.cart-outer > .left > .box > .left-part > .qty  > button{
+    height: 33px;
+    width: 33px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(233, 243, 233);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cart-outer > .left > .box > .left-part > .qty  > button:hover{
+    background-color: rgb(226, 225, 225);
+}
+
+.cart-outer > .left > .box > .left-part > .qty  > span{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+     background: #f2f2f2;
+     border-radius: 6px;
+}
+
+.cart-outer > .left > .box > .right-part{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-outer > .left > .box > .right-part > h2{
+     width: 340px;
+     font-weight: bold;
+     text-transform: capitalize;
+     font-size: 30px;
+     padding-top: 15px;
+}
+
+.cart-outer > .left > .box > .right-part > .reviews{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.cart-outer > .left > .box > .right-part > .reviews > span{
+    font-size: 18px;
+}
+
+.cart-outer > .left > .box > .right-part > .reviews >  .gold{
+    color: gold;
+    
+}
+
+.cart-outer > .left > .box > .right-part > .reviews >  .white{
+    color: rgb(218, 217, 217);
+    
+}
+
+.cart-outer > .left > .box > .right-part > .reviews > .rating-text{
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    color: #555;
+}
+.cart-outer > .left > .box > .right-part > h3{
+    
+    font-weight: lighter;
+    font-size: 23px;
+    color: rgb(85, 83, 83);
+    text-transform: capitalize;
+}
+
+.cart-outer > .left > .box > .right-part > h4 {
+
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.cart-outer > .left > .box > .right-part > p{
+    font-size: 19px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.cart-outer > .left > .box > .right-part > .remove{
+    height: 40px;
+    width: 70px;
+    background-color: white;
+    border: none;
+    color: rgb(231, 31, 31);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-outer > .left > .box >.right-part > .remove:hover{
+    color: rgb(151, 9, 9);
+}
+
+.cart-outer > .left > a{
+  text-decoration: none;
+  color: rgb(43, 43, 199);
+  padding: 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.cart-outer > .left > a:hover{
+    color: rgb(106, 22, 184);
+}
+
+.cart-outer > .right{
+    height: 420px;
+    width: 26%;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10%;
+    box-shadow: 2.3px 2px 2px;
+
+    position: sticky;
+    top: 120px;
+}
+
+.cart-outer > .right > h1{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 14px;
+    font-size: 38px;
+    border-bottom: 1.8px solid black;
+    padding-bottom: 20px;
+}
+
+.cart-outer > .right > h3{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 27px;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+.cart-outer > .right > h2{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-top: 1.4px solid black;
+}
+
+.cart-outer > .right > a > button{
+    height: 50px;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 7px;
+    background-color: rgb(224, 127, 16);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cart-outer > .right  > a > button:hover{
+    background-color: rgb(175, 107, 18);
+}

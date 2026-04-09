@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.home-outer{
+    min-height: 130vh;
+    width: 100%;
+    background-color: rgb(243, 242, 236);
+    padding-top: 130px;
+}
+
+.home-outer > .banner{
+    margin-top: 80px;
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    /* background: linear-gradient(to right,rgb(238, 244, 248),rgb(215, 231, 233)); */
+    background-image: url('/bg1.png');
+}
+
+.home-outer > .banner > img{
+    
+    height: 490px;
+    width: 500px;
+    object-fit: cover;
+
+    position: absolute;
+    bottom: 4px;
+    left: 40px;
+}
+
+.home-outer > .banner > h2{
+    
+    position: absolute;
+    top: 130px;
+    right: 26%;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: cursive, sans-serif,popins;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+}
+
+.home-outer > .banner > a > button{
+    position: absolute;
+    top :250px;
+    right: 43%;
+    height: 45px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.home-outer > .banner > a > button:hover{
+   background-color: rgb(51, 48, 48);
+}
+
+.home-outer > .category{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   gap: 70px;
+   margin-top: 60px;
+   
+}
+
+.home-outer > .category > h2{
+    width: 100%;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1.3px;
+    word-spacing: 10px;
+}
+
+
+.home-outer > .category > .inner > a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-outer > .category > .inner > a > img{
+    height: 200px;
+    width: 180px;
+    border-radius: 20%;
+    border: 2px solid black;
+    background-color: rgb(228, 227, 235);
+    object-fit: cover;
+}
+
+.home-outer > .category > .inner > a > img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.home-outer > .category > .inner > a > h2{
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+

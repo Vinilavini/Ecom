@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.kids-outer{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(236, 222, 232);
+    padding-top: 70px;
+}
+
+.kids-outer > .banner{
+    height: 430px;
+    width: 100%;
+    background-color: white;
+    margin-top: 150px;
+    background-image: url('./kidsbg.png');
+    background-size: cover;
+
+    position: relative;
+}
+
+.kids-outer > .banner > img{
+    position: absolute;
+    top: 1px;
+    right: 70px;
+    bottom: 0px;
+
+    height: 430px;
+    width: 430px;
+    object-fit: cover;
+}
+
+.kids-outer > .banner > h2{
+    position: absolute;
+    top: 27%;
+    left: 48%;
+
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 48px;
+    letter-spacing: 1.9px;
+    word-spacing: 17px;
+    font-family: popins, cursive, sans-serif;
+    color: rgb(228, 132, 6);
+}
+
+.kids-outer > .banner > h3{
+    position: absolute;
+    top: 48%;
+    left: 51%;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 46px;
+    letter-spacing: 1.9px;
+    word-spacing: 17px;
+    font-family: popins, cursive, sans-serif;
+    color: rgb(92, 91, 90);
+}
+
+.kids-outer > .category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.kids-outer > .category > h2{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 1.5px;
+}
+
+.kids-outer > .category > .inner1 > a{
+    text-decoration: none;
+    color: black;
+}
+
+.kids-outer > .category > .inner1  > a > img{
+    height: 180px;
+    width: 150px;
+    border-radius: 26%;
+    border: 2px solid black;
+    background: linear-gradient(to top,white, rgb(237, 247, 225));
+    object-fit: cover;
+}
+
+.kids-outer > .category > .inner1 > a > img:hover{
+      transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.kids-outer > .category >.inner1 > a > h3{
+    font-weight: lighter;
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 5px;
+    letter-spacing: 1.2px;
+    font-family: verdana;
+}
+
+.kids-outer > .category2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+
+
+.kids-outer > .category2 > .inner2 > a{
+    text-decoration: none;
+    color: black;
+}
+
+.kids-outer > .category2 > .inner2  > a > img{
+    height: 180px;
+    width: 150px;
+    border-radius: 26%;
+    border: 2px solid black;
+    background: linear-gradient(to top,white, rgb(237, 247, 225));
+    object-fit: cover;
+}
+
+.kids-outer > .category2 > .inner2 > a > img:hover{
+      transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.kids-outer > .category2 >.inner2 > a > h3{
+    font-weight: lighter;
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 5px;
+    letter-spacing: 1.2px;
+    font-family: verdana;
+}

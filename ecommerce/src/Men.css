@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.men-outer{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(228, 222, 236);
+    padding-top: 70px;
+}
+
+.men-outer > .banner{
+    height: 430px;
+    width: 100%;
+    background-color: white;
+    margin-top: 150px;
+    background-image: url('./menbg.png');
+    background-size: cover;
+    border: 2px solid black;
+
+    position: relative;
+}
+
+.men-outer > .banner > img{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 0px;
+
+    height: 420px;
+    width: 430px;
+    object-fit: cover;
+}
+
+.men-outer > .banner > h2{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    word-spacing: 10px;
+    font-family: popins, cursive, sans-serif;
+}
+
+.men-outer > .category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.men-outer > .category > h2{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 1.5px;
+}
+
+.men-outer > .category > .inner > a{
+    text-decoration: none;
+    color: black;
+}
+
+.men-outer > .category > .inner  > a > img{
+    height: 180px;
+    width: 150px;
+    border-radius: 26%;
+    border: 2px solid black;
+    background: linear-gradient(to top,white, rgb(236, 196, 210));
+    object-fit: cover;
+}
+
+.men-outer > .category > .inner > a > img:hover{
+      transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.men-outer > .category >.inner > a > h3{
+    font-weight: lighter;
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 5px;
+    letter-spacing: 1.2px;
+    font-family: verdana;
+}

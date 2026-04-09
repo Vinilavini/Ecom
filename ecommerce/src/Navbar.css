@@ -1,0 +1,78 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav{
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  margin-top: 40px;
+  box-shadow: 2px 2px 2px 1.5px black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+
+}
+
+.nav > h2{
+   padding-left: 30px;
+   font-weight: bold;
+   text-transform: capitalize;
+   font-size: 30px;
+   font-family: cursive,sans-serif;
+
+}
+
+.nav > .inner{
+    display: flex;
+    gap: 130px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 21px;
+    
+}
+
+.nav > .inner > span > a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav > .inner > span > a.active{
+    border-bottom: 2px solid rgb(100, 98, 98);
+    padding-bottom: 4px;
+}
+
+.nav > .inner > span >a:hover{
+    color: rgb(77, 72, 72);
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}
+
+.nav > h3 > span > a{
+     text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 21px;
+    margin-right: 40px;
+}
+
+.nav > h3 > span > a.active{
+     border-bottom: 2px solid rgb(100, 98, 98);
+    padding-bottom: 4px;
+}
+
+.nav > h3 > span > a:hover{
+    color: rgb(77, 72, 72);
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}

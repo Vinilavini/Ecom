@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.women-outer{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(236, 222, 232);
+    padding-top: 70px;
+}
+
+.women-outer > .banner{
+    height: 430px;
+    width: 100%;
+    background-color: white;
+    margin-top: 150px;
+    background-image: url('./womenbg.png');
+    background-size: cover;
+
+    position: relative;
+}
+
+.women-outer > .banner > img{
+    position: absolute;
+    top: 1px;
+    right: 70px;
+    bottom: 0px;
+
+    height: 430px;
+    width: 430px;
+    object-fit: cover;
+}
+
+.women-outer > .banner > h2{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    word-spacing: 10px;
+    font-family: popins, cursive, sans-serif;
+    color: rgb(59, 57, 57);
+}
+
+.women-outer > .category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.women-outer > .category > h2{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 1.5px;
+}
+
+.women-outer > .category > .inner > a{
+    text-decoration: none;
+    color: black;
+}
+
+.women-outer > .category > .inner  > a > img{
+    height: 180px;
+    width: 150px;
+    border-radius: 26%;
+    border: 2px solid black;
+    background: linear-gradient(to top,white, rgb(215, 237, 238));
+    object-fit: cover;
+}
+
+.women-outer > .category > .inner > a > img:hover{
+      transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.women-outer > .category >.inner > a > h3{
+    font-weight: lighter;
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 5px;
+    letter-spacing: 1.2px;
+    font-family: verdana;
+}

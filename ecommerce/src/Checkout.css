@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.checkout-outer{
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-color: rgb(248, 238, 240);
+}
+
+.checkout-outer > h1{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    font-size: 45px;
+    padding-top: 10px;
+   
+    
+}
+
+.checkout-outer > .left{
+    width: 50%;
+    background-color: white;
+
+}
+
+.checkout-outer > .left > h2{
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgb(49, 48, 48);
+    padding: 30px;
+    letter-spacing: 1.5px;
+    word-spacing: 8px;
+
+}
+
+.checkout-outer > .left > input,
+.checkout-outer > .left > textarea{
+    width: 80%;
+    text-transform: capitalize;
+    padding: 18px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    border: 1px solid black ;
+    font-size: 16px;
+    margin-left: 13px;
+}
+
+.checkout-outer > .left > textarea{
+    height: 100px;
+    resize: none;
+}
+
+.checkout-outer > .right{
+    
+    background-color: white;
+    width: 30%;
+    padding: 15px;
+    
+}
+
+.checkout-outer > .right > .inner{
+    display: flex;
+    gap: 10px;
+    border-bottom: 1.5px solid rgb(88, 88, 88);
+    padding-bottom: 3px;
+}
+
+.checkout-outer > .right > .inner > img{
+    height: 80px;
+    width: 70px;
+    border-radius: 6px;
+    object-fit: cover;
+    
+}
+
+
+   
