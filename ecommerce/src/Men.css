@@ -16,7 +16,7 @@
     width: 100%;
     background-color: white;
     margin-top: 150px;
-    background-image: url('./menbg.png');
+    background-image: url('/menbg.png');
     background-size: cover;
     border: 2px solid black;
 

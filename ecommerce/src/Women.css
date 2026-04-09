@@ -16,7 +16,7 @@
     width: 100%;
     background-color: white;
     margin-top: 150px;
-    background-image: url('./womenbg.png');
+    background-image: url('/womenbg.png');
     background-size: cover;
 
     position: relative;

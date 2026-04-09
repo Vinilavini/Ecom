@@ -16,7 +16,7 @@
     width: 100%;
     background-color: white;
     margin-top: 150px;
-    background-image: url('./kidsbg.png');
+    background-image: url('/kidsbg.png');
     background-size: cover;
 
     position: relative;
