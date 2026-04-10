@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import "./App.css"
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './Navbar'
 import Home from './Home'
@@ -22,6 +23,7 @@ import Kgirl3 from './Kgirl3';
 import Mshirtdetails from './Mshirtdetails';
 import Cart from './Cart';
 import Checkout from './Checkout';
+import Success from './Success';
 
 
 
@@ -89,7 +91,8 @@ const App = () => {
         <Route path='/kids/kgirl3' element={<Kgirl3/>}/>
         <Route path='/men/mshirt/:id' element={<Mshirtdetails  add={handleadd}/>}/>
         <Route path='/cart' element={<Cart cart={cart} increment={handleincrease}  decrement={handledecrease}   remove={handleremove}/>}/>
-        <Route path='/checkout' element={<Checkout cart={cart}/>}/>
+        <Route path='/checkout' element={<Checkout cart={cart}  setcart={setcart}/>}/>
+        <Route path='/success' element={<Success/>}/>
         
       </Routes>
     </BrowserRouter>

@@ -1,15 +1,12 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
 
 .checkout-outer{
-    padding-top: 150px;
+    
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    background-color: rgb(248, 238, 240);
+    background-color: #f8eef0;
+    padding: 20px;
+  
 }
 
 .checkout-outer > h1{
@@ -20,14 +17,16 @@
     letter-spacing: 3px;
     word-spacing: 7px;
     font-size: 45px;
-    padding-top: 10px;
+    padding-top: 80px;
    
     
 }
 
 .checkout-outer > .left{
-    width: 50%;
+    width: 65%;
     background-color: white;
+    padding: 20px;
+    margin-top: 30px;
 
 }
 
@@ -37,19 +36,19 @@
     text-transform: capitalize;
     color: rgb(49, 48, 48);
     padding: 30px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
     word-spacing: 8px;
 
 }
 
 .checkout-outer > .left > input,
 .checkout-outer > .left > textarea{
-    width: 80%;
+    width: 100%;
     text-transform: capitalize;
-    padding: 18px;
-    margin-bottom: 17px;
+    padding: 15px;
+    margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid black ;
+    border: 1px solid #b2b2b2 ;
     font-size: 16px;
     margin-left: 13px;
 }
@@ -59,28 +58,109 @@
     resize: none;
 }
 
+.checkout-outer > .left > input.error,
+.checkout-outer > .left > textarea.error{
+  border:1.4px solid red !important;
+}
 .checkout-outer > .right{
     
     background-color: white;
-    width: 30%;
-    padding: 15px;
-    
+    width: 35%;
+    padding: 20px;
+    height: fit-content; 
+    position: sticky;  
+    top: 120px; 
+    margin-top: 30px;
+}
+
+.checkout-outer > .right > h2{
+   font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgb(49, 48, 48);
+    padding: 16px;
+    letter-spacing: 0.7px;
+    word-spacing: 5px;
+
 }
 
 .checkout-outer > .right > .inner{
     display: flex;
     gap: 10px;
-    border-bottom: 1.5px solid rgb(88, 88, 88);
-    padding-bottom: 3px;
+    border-bottom: 1.5px solid #ddd;
+    padding: 10px 0;
 }
 
 .checkout-outer > .right > .inner > img{
     height: 80px;
     width: 70px;
-    border-radius: 6px;
+    
     object-fit: cover;
     
 }
 
+.checkout-outer > .right > .inner > .details{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.checkout-outer > .right > .inner > .details > p{
+    font-weight: 550;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.2px;
+}
+
+.checkout-outer > .right > .inner > .details > span{
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.checkout-outer > .right > .inner > .details > h4{
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+}
+
+.checkout-outer > .right > .total{
+    margin-top: 7px;
+    padding-top: 15px;
+  
+}
+
+.checkout-outer > .right > .total > button{
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+
+.checkout-outer > .right > .total > .row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    text-transform: capitalize;
+}
+
+.grand{
+    padding-top: 6px;
+    border-top: 1px solid #ccc;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.details h4{
+    margin-top:5px;
+    font-size:16px;
+}
 
    

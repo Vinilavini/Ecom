@@ -86,7 +86,7 @@ const Cart = ({cart,increment,decrement,remove}) => {
            </h2>
            
            <NavLink to='/checkout'>
-              <button onClick={()=> alert("Order Placed Successfully")}>place order</button>
+              <button>place order</button>
 
            </NavLink>
            
