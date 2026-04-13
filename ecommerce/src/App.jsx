@@ -21,9 +21,12 @@ import Kgirl1 from './Kgirl1';
 import Kgirl2 from './Kgirl2';
 import Kgirl3 from './Kgirl3';
 import Mshirtdetails from './Mshirtdetails';
+import Mpantdetails from './Mpantdetails';
+import Mtshirtdetails from './Mtshirtdetails';
 import Cart from './Cart';
 import Checkout from './Checkout';
 import Success from './Success';
+
 
 
 
@@ -31,21 +34,25 @@ const App = () => {
 
    const [cart,setcart]=useState([])
 
-  const handleadd=(product)=>{
+  const handleadd = (product) => {
+  const existingitem = cart.find((item) =>
+    item.id === product.id &&
+    item.size === product.size &&
+    item.selectedColor === product.selectedColor
+  )
 
-    const existingitem=cart.find((item)=>
-      item.id === product.id
-    ) 
-    if(existingitem)
-    {
-      setcart(cart.map((item)=>
-        item.id === product.id    ?  {...item,qty:item.qty+1}    :  item
-      ))
-    }   else   {
-        
-      setcart([...cart,{...product,qty:1}])
-    }
+  if (existingitem) {
+    setcart(cart.map((item) =>
+      item.id === product.id &&
+      item.size === product.size &&
+      item.selectedColor === product.selectedColor
+        ? { ...item, qty: item.qty + 1 }
+        : item
+    ))
+  } else {
+    setcart([...cart, { ...product }])
   }
+}
 
    const handleincrease=(id)=>{
     const updatedincrease=cart.map((item)=>
@@ -90,6 +97,8 @@ const App = () => {
         <Route path='/kids/kgirl2' element={<Kgirl2/>}/>
         <Route path='/kids/kgirl3' element={<Kgirl3/>}/>
         <Route path='/men/mshirt/:id' element={<Mshirtdetails  add={handleadd}/>}/>
+        <Route path='/men/mpant/:id' element={<Mpantdetails  add={handleadd}/>}/>
+        <Route path='/men/mt-shirt/:id' element={<Mtshirtdetails  add={handleadd}/>}/>
         <Route path='/cart' element={<Cart cart={cart} increment={handleincrease}  decrement={handledecrease}   remove={handleremove}/>}/>
         <Route path='/checkout' element={<Checkout cart={cart}  setcart={setcart}/>}/>
         <Route path='/success' element={<Success/>}/>

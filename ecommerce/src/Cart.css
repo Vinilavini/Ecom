@@ -7,7 +7,7 @@
 
     display: flex;
    flex-wrap: wrap;
-    gap: 60px;   
+    gap: 30px;   
 }
 
 .cart-outer > h1{
@@ -23,16 +23,17 @@
 
 .cart-outer > .left{
     min-height: 50vh;
-    width: 40%;
+    width: 42%;
     background-color: white;
-    margin-left: 10%;
-    box-shadow: 2px 2px 2px ;
-    border-radius: 8px;
+    margin-left: 8%;
+    box-shadow: 4px 8px 20px rgba(0,0,0,0.08) ;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .cart-outer > .left > .box{
     display: flex;
-    gap: 30px;
+    gap: 25px;
     padding-bottom: 4px;
     border-bottom: 1.7px solid black;
     margin-bottom: 20px;
@@ -56,12 +57,11 @@
 }
 
 .cart-outer > .left > .box > .left-part >  img{
-    height: 160px;
-    width: 150px;
-    padding: 10px;
-    padding-right: 20px;
-    border-radius: 20%;
+   height: 150px;
+    width: 130px;
+    border-radius: 10px;
     object-fit: cover;
+    background: #f8f8f8;
 }
 
 .cart-outer > .left > .box > .left-part > .qty {
@@ -99,11 +99,9 @@
 }
 
 .cart-outer > .left > .box > .right-part > h2{
-     width: 340px;
-     font-weight: bold;
-     text-transform: capitalize;
-     font-size: 30px;
-     padding-top: 15px;
+      width: 320px;
+     font-size: 22px;
+     line-height: 1.3;
 }
 
 .cart-outer > .left > .box > .right-part > .reviews{
@@ -142,8 +140,8 @@
 
 .cart-outer > .left > .box > .right-part > h4 {
 
-    font-weight: bold;
-    font-size: 28px;
+   font-size: 24px;
+    color: #111;
 }
 
 .cart-outer > .left > .box > .right-part > p{
@@ -182,15 +180,15 @@
 }
 
 .cart-outer > .right{
-    height: 420px;
+    height: 380px;
     width: 26%;
     background-color: white;
-    border-radius: 10px;
-    margin-right: 10%;
-    box-shadow: 2.3px 2px 2px;
-
+    border-radius: 9px;
+    margin-right: 8%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     position: sticky;
     top: 120px;
+    padding-bottom: 15px;
 }
 
 .cart-outer > .right > h1{
@@ -205,8 +203,8 @@
 .cart-outer > .right > h3{
     display: flex;
     justify-content: space-between;
-    padding: 15px;
-    font-size: 27px;
+    padding: 12px;
+    font-size: 20px;
     text-transform: capitalize;
     font-weight: lighter;
 }
@@ -223,8 +221,8 @@
 
 .cart-outer > .right > a > button{
     height: 50px;
-    width: 40%;
-    margin-left: 30%;
+    width: 70%;
+    margin-left: 15%;
     border-radius: 7px;
     background-color: rgb(224, 127, 16);
     font-weight: bold;

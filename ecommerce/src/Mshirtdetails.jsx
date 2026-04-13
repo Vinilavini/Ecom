@@ -28,7 +28,8 @@ const Mshirtdetails = ({add}) => {
           add({
             ...product,
             size,
-            qty
+            qty,
+            selectedColor: selectedcolor 
           })
         }  else  {
           navigate("/cart")
@@ -80,8 +81,26 @@ const Mshirtdetails = ({add}) => {
         rating:4.5,
         reviews:"(488 views)" ,
         price:799,
-        clr:"pink",
-        bg:" rgb(226, 154, 167)",
+        colors: {
+            
+                 pink: [
+                    "/mshirt2pink-1.png",
+                    "/mshirt2pink-2.png",
+                    "/mshirt2pink-3.png"
+                 ],
+                 lightgreen: [
+                   "/mshirt2green-1.png",
+                   "/mshirt2green-2.png",
+                   "/mshirt2green-3.png"
+                 ],
+                 red: [
+                   "/mshirt2red-1.png",
+                   "/mshirt2red-2.png",
+                   "/mshirt2red-3.png"
+                 ]
+             
+        },
+
 
         fabric:"cotton blend",
         fit:"regular fit",
@@ -98,8 +117,25 @@ const Mshirtdetails = ({add}) => {
         rating:4.6,
         reviews:"(382 views)" ,
         price:799,
-       clr:"white- blue",
-       bg:"linear-gradient(to right,rgb(105, 105, 211),white)",
+       colors: {
+            
+                blue: [
+                    "/mshirt3rose-1.png",
+                    "/mshirt3rose-2.png",
+                    "/mshirt3rose-3.png"
+                 ],
+                 skyblue: [
+                   "/mshirt3skyblue-1.png",
+                   "/mshirt3skyblue-2.png",
+                   "/mshirt3skyblue-3.png"
+                 ],
+                 darkviolet: [
+                   "/mshirt3violet-1.png",
+                   "/mshirt3violet-2.png",
+                   "/mshirt3violet-3.png"
+                 ]
+             
+        },
 
       fabric:"cotton blend",
       fit:"regular fit",
@@ -116,8 +152,26 @@ const Mshirtdetails = ({add}) => {
         rating:3.7,
         reviews:"(390 views)" ,
         price:799,
-        clr:"blue",
-        bg:"rgb(67, 67, 168)",
+        colors: {
+            
+                darkblue: [
+                    "/mshirt4blue-1.png",
+                    "/mshirt4blue-2.png",
+                    "/mshirt4blue-3.png"
+                 ],
+                 brown: [
+                   "/mshirt4brown-1.png",
+                   "/mshirt4brown-2.png",
+                   "/mshirt4brown-3.png"
+                 ],
+                 green: [
+                   "/mshirt4green-1.png",
+                   "/mshirt4green-2.png",
+                   "/mshirt4green-3.png"
+                 ]
+             
+        },
+
 
         fabric:"cotton",
         fit:"slim fit",
@@ -176,11 +230,11 @@ const Mshirtdetails = ({add}) => {
             
             <div className="details">
               <h4>product details</h4>
-              <p><span>fabric  :</span>{product.fabric}</p>
-              <p><span>fit  :</span>{product.fit}</p>
-              <p><span>sleeve  :</span>{product.sleeve}</p>
-              <p><span>pattern  :</span>{product.pattern}</p>
-              <p><span>occasion  :</span>{product.occasion}</p>
+              <p><span>fabric  : </span>{product.fabric}</p>
+              <p><span>fit  : </span>{product.fit}</p>
+              <p><span>sleeve  : </span>{product.sleeve}</p>
+              <p><span>pattern  : </span>{product.pattern}</p>
+              <p><span>occasion  : </span>{product.occasion}</p>
             </div>
            <h3> <span>selected color : </span>{selectedcolor}</h3>
           

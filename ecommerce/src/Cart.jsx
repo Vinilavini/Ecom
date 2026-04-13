@@ -26,7 +26,7 @@ const Cart = ({cart,increment,decrement,remove}) => {
          <div className="box" key={item.id}>
 
           <div className="left-part">
-               <img src={item.images[0]} alt="" />
+               <img src={item.colors[item.selectedColor][0]} alt="" />
                <div className="qty">
                    <button onClick={()=>decrement(item.id)}>-</button>
                    <span>{item.qty}</span>

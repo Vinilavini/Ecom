@@ -22,7 +22,7 @@ button{
 }
 
 /* MAIN WRAPPER */
-.mshirtdetails-outer{
+.mtshirtdetails-outer{
     min-height: 100vh;
     width: 100%;
 
@@ -36,15 +36,15 @@ button{
 }
 
 /* LEFT + RIGHT FLEX */
-.mshirtdetails-outer > .left,
-.mshirtdetails-outer > .right{
+.mtshirtdetails-outer > .left,
+.mtshirtdetails-outer > .right{
     flex: 1;
     max-width: 600px;
     width: 100%;
 }
 
 /* LEFT BOX */
-.mshirtdetails-outer > .left{
+.mtshirtdetails-outer > .left{
     display: flex;
     gap: 15px;
     background: #fff;
@@ -53,13 +53,13 @@ button{
 }
 
 /* THUMBNAILS */
-.mshirtdetails-outer > .left > .small{
+.mtshirtdetails-outer > .left > .small{
   display:flex;
   flex-direction:column;
   gap:12px;
 }
 
-.mshirtdetails-outer > .left > .small > img{
+.mtshirtdetails-outer > .left > .small > img{
     width: 90px;
     height: 100px;
     object-fit: cover;
@@ -68,24 +68,24 @@ button{
     transition: 0.3s;
 }
 
-.mshirtdetails-outer > .left > .small > img:hover{
+.mtshirtdetails-outer > .left > .small > img:hover{
     transform: scale(1.05);
     box-shadow: 1px 1px 1px black;
 }
 
-.mshirtdetails-outer > .left > .small > img.active{
+.mtshirtdetails-outer > .left > .small > img.active{
     border: 2px solid black;
 }
 
 /* MAIN IMAGE */
 
-.mshirtdetails-outer > .left > .main{
+.mtshirtdetails-outer > .left > .main{
   width:100%;
   height:520px;
   overflow:hidden;
   border-radius:12px;
 }
-.mshirtdetails-outer > .left > .main > img{
+.mtshirtdetails-outer > .left > .main > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -94,57 +94,57 @@ button{
     cursor: zoom-in;
 }
 
-.mshirtdetails-outer > .left > .main img:hover{
+.mtshirtdetails-outer > .left > .main img:hover{
     transform: scale(1.25);
 }
 
 /* RIGHT BOX */
-.mshirtdetails-outer > .right{
+.mtshirtdetails-outer > .right{
     background: #fff;
     padding: 20px;
     border-radius: 10px;
 }
 
 /* TITLE */
-.mshirtdetails-outer > .right > h1{
+.mtshirtdetails-outer > .right > h1{
     font-size: 28px;
     font-weight: bold;
 }
 
 /* REVIEWS */
-.mshirtdetails-outer > .right > .reviews{
+.mtshirtdetails-outer > .right > .reviews{
     display:flex;
     gap:8px;
     align-items:center;
 }
 
-.mshirtdetails-outer > .right > .reviews > .star{
+.mtshirtdetails-outer > .right > .reviews > .star{
     color: gold;
     font-size: 20px;
     -webkit-text-stroke: 1px black;
 }
 
-.mshirtdetails-outer > .right > .reviews > .star.white{
+.mtshirtdetails-outer > .right > .reviews > .star.white{
     color: white;
 }
 
-.mshirtdetails-outer > .right > .reviews > span{
+.mtshirtdetails-outer > .right > .reviews > span{
     font-size: 16px;
     
 }
 
 /* PRICE */
-.mshirtdetails-outer >.right > h2{
+.mtshirtdetails-outer >.right > h2{
     margin-top: 10px;
     font-size: 24px;
 }
 
 /* DETAILS */
-.mshirtdetails-outer > .right > .details{
+.mtshirtpantdetails-outer > .right > .details{
     margin-top: 15px;
 }
 
-.mshirtdetails-outer > .right > .details > h4{
+.mtshirtpantdetails-outer > .right > .details > h4{
     border-bottom:2px solid black;
     padding-bottom: 2px;
     display:inline-block;
@@ -152,34 +152,34 @@ button{
     font-size: 18px;
 }
 
-.mshirtdetails-outer > .right > .details > p{
+.mtshirtdetails-outer > .right > .details > p{
     font-size: 16px;
     margin: 5px 0;
     padding: 4px;
     font-weight: lighter;
 }
 
-.mshirtdetails-outer > .right > .details > p > span{
+.mtshirtdetails-outer > .right > .details > p > span{
   font-weight: 600;
 }
 
-.mshirtdetails-outer > .right > h3{
+.mtshirtdetails-outer > .right > h3{
   margin-top: 10px;
   color: rgb(49, 48, 48);
 }
 
-.mshirtdetails-outer > .right > h3 > span{
+.mtshirtdetails-outer > .right > h3 > span{
     font-size: 18px;
     color: blue;
 }
 /* COLORS */
-.mshirtdetails-outer > .right > .color-container{
+.mtshirtdetails-outer > .right > .color-container{
   display:flex;
   gap:10px;
   margin-top:10px;
 }
 
-.mshirtdetails-outer > .right > .color-container > .clr{
+.mtshirtdetails-outer > .right > .color-container > .clr{
   width:35px;
   height:35px;
   border-radius:50%;
@@ -188,30 +188,30 @@ button{
   transition:.2s;
 }
 
-.mshirtdetails-outer > .right > .color-container > .clr:hover{
+.mtshirtdetails-outer > .right > .color-container > .clr:hover{
   transform:scale(1.1);
   border: 1.9px solid black;
 }
 
-.mshirtdetails-outer > .right > .color-container > .clr.active{
+.mtshirtdetails-outer > .right > .color-container > .clr.active{
   transform: scale(1.10);
   border: 2px solid black;
 }
 
 /* SIZES */
 
-.mshirtdetails-outer > .right > h4{
+.mtshirtdetails-outer > .right > h4{
   margin-top: 13px;
   color: rgb(22, 22, 237);
 }
-.mshirtdetails-outer > .right > .sizes{
+.mtshirtdetails-outer > .right > .sizes{
   display:flex;
   gap:10px;
   margin-top:10px;
   flex-wrap:wrap;
 }
 
-.mshirtdetails-outer > .right > .sizes > button{
+.mtshirtdetails-outer > .right > .sizes > button{
   padding:6px 12px;
   border:1.3px solid black;
   background:white;
@@ -219,37 +219,37 @@ button{
   transition:.2s;
 }
 
-.mshirtdetails-outer > .right > .sizes > button:hover{
+.mtshirtdetails-outer > .right > .sizes > button:hover{
   background:#3e3d3d;
   color: white;
   border: 1.5px solid black;
 }
 
-.mshirtdetails-outer > .right > .sizes > button.active{
+.mtshirtdetails-outer > .right > .sizes > button.active{
   background:black;
   color:white;
   font-weight: bold;
 }
 
-.mshirtdetails-outer > .right > .quantity{
+.mtshirtdetails-outer > .right > .quantity{
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 10px;
 }
 
-.mshirtdetails-outer > .right > .quantity > p{
+.mtshirtdetails-outer > .right > .quantity > p{
   font-size: 18px;
   color: rgb(25, 170, 12);
   letter-spacing: 0.4px;
 }
 
-.mshirtdetails-outer > .right > .quantity > .qty{
+.mtshirtdetails-outer > .right > .quantity > .qty{
   display: flex;
   gap: 7px;
 }
 
-.mshirtdetails-outer > .right > .quantity >.qty > #b3,#b5{
+.mtshirtdetails-outer > .right > .quantity >.qty > #b3,#b5{
   height: 25px;
   width: 25px;
   font-weight: bold;
@@ -260,11 +260,11 @@ button{
 
 }
 
-.mshirtdetails-outer > .right > .quantity >.qty > #b3:hover,#b5:hover{
+.mtshirtdetails-outer > .right > .quantity >.qty > #b3:hover,#b5:hover{
   background-color: #ccc;
 }
 
-.mshirtdetails-outer > .right > .quantity >.qty > #b4{
+.mtshirtdetails-outer > .right > .quantity >.qty > #b4{
   height: 25px;
   width: 25px;
   font-weight: bold;
@@ -276,13 +276,13 @@ button{
 }
 
 /* BUTTONS */
-.mshirtdetails-outer > .right > .btns{
+.mtshirtdetails-outer > .right > .btns{
   display:flex;
   gap:10px;
   margin-top:20px;
 }
 
-.mshirtdetails-outer > .right > .btns > #b1{
+.mtshirtdetails-outer > .right > .btns > #b1{
   flex:1;
   padding:12px;
   border:1px solid black;
@@ -293,12 +293,12 @@ button{
   transition:.3s;
 }
 
-.mshirtdetails-outer > .right > .btns > #b1:hover{
+.mtshirtdetails-outer > .right > .btns > #b1:hover{
   background:#ffd600;
   transform:translateY(-2px);
 }
 
- .mshirtdetails-outer > .right > .btns > a > #b2{
+ .mtshirtdetails-outer > .right > .btns > a > #b2{
   flex:1;
   padding:12px;
   background:black;
@@ -310,14 +310,14 @@ button{
   font-weight: bold;
 }
 
-.mshirtdetails-outer > .right > .btns > a> #b2:hover{
+.mtshirtdetails-outer > .right > .btns > a> #b2:hover{
   background:#1565c0;
   transform:translateY(-2px);
 }
 
 /* RESPONSIVE */
 @media (max-width:1024px){
-  .mshirtdetails-outer{
+  .mtshirtdetails-outer{
     flex-direction:column;
     align-items:center;
   }
@@ -329,7 +329,7 @@ button{
 }
 
 @media (max-width:768px){
-  .mshirtdetails-outer{
+  .mtshirtdetails-outer{
     padding:90px 10px;
   }
 
