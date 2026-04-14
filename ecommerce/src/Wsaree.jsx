@@ -19,7 +19,7 @@ const Wsaree = () => {
             <img src={item.img} alt="" />
             <h2>{item.text}</h2>
             <h3>₹{item.price}</h3>
-            <NavLink to={'/women/wsaree/${item.id}'}>
+            <NavLink to={`/women/wsaree/${item.id}`}>
               <button>view more</button>
             </NavLink>
            

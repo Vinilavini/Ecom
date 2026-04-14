@@ -13,7 +13,7 @@ const Men = () => {
    const categories=[
     {img:"/mshirt.png",text:"shirt",path:"/men/mshirt"},
     {img:"/mpant.png",text:"pant",path:"/men/mpant"},
-    {img:"/mt-shirt.png",text:"t-shirt",path:"/men/mt-shirt"},
+    {img:"/mt-shirt.png",text:"t-shirt",path:"/men/mtshirt"},
     {img:"/mkurtas.png",text:"kurtas",path:"/men/mkurtas"},
    ]
   return (

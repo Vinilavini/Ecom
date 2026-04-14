@@ -16,25 +16,25 @@ const Mpantdetails = ({add}) => {
 
       const handlecart=()=>{
 
-        if(!size){
-          alert("please select size")
-          return
-        }
+  if(!size){
+    alert("please select size")
+    return
+  }
 
-
-        if(!added){
-          setadded(true)
-          setqty(1)
-          add({
-            ...product,
-            size,
-            qty:1,
-            selectedColor: selectedcolor 
-          })
-        }  else  {
-          navigate("/cart")
-        }
-      }
+  if(!added){
+    setadded(true)
+    setqty(1)
+    add({
+      ...product,
+      size,
+      qty:1,
+      selectedColor: selectedcolor,
+      image: currentImages[index]
+    })
+  } else {
+    navigate("/cart")
+  }
+}
 
       const sizes=["28","30","32" ,"34"]
 

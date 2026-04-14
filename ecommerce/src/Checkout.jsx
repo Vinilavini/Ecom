@@ -93,17 +93,17 @@ const Checkout = ({ cart , setcart}) => {
          
          <h2>cart items</h2>
 
-         {cart.map((item)=>
-            <div className="inner" key={item.id}>
-               <img src={item.images[0]} alt="" />
-
-               <div className="details">
-                 <p>{item.text}</p>
-                 <span>qty:{item.qty}</span>
-                 <h4>price:₹{item.price}</h4>
-               </div>
-            </div>
-        )}
+        {cart.map((item)=>
+        <div className="inner" key={item.id + item.selectedColor + item.size}>
+           <img src={item.images?.[0] || item.image} alt="" />
+      
+           <div className="details">
+             <p>{item.text}</p>
+             <span>qty:{item.qty}</span>
+             <h4>price:₹{item.price}</h4>
+           </div>
+        </div>
+      )}
 
         <div className="total">
 

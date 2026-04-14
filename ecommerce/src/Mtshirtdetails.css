@@ -140,11 +140,11 @@ button{
 }
 
 /* DETAILS */
-.mtshirtpantdetails-outer > .right > .details{
+.mtshirtdetails-outer > .right > .details{
     margin-top: 15px;
 }
 
-.mtshirtpantdetails-outer > .right > .details > h4{
+.mtshirtdetails-outer > .right > .details > h4{
     border-bottom:2px solid black;
     padding-bottom: 2px;
     display:inline-block;

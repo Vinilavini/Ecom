@@ -23,10 +23,13 @@ import Kgirl3 from './Kgirl3';
 import Mshirtdetails from './Mshirtdetails';
 import Mpantdetails from './Mpantdetails';
 import Mtshirtdetails from './Mtshirtdetails';
+import Wsareedetails from './Wsareedetails';
+import Wtopsdetails from './Wtopsdetails';
+import Wfrockdetails from './Wfrockdetails';
+import Kboy1details from './Kboy1details';
 import Cart from './Cart';
 import Checkout from './Checkout';
 import Success from './Success';
-
 
 
 
@@ -35,23 +38,25 @@ const App = () => {
    const [cart,setcart]=useState([])
 
   const handleadd = (product) => {
-  const existingitem = cart.find((item) =>
-    item.id === product.id &&
-    item.size === product.size &&
-    item.selectedColor === product.selectedColor
-  )
-
-  if (existingitem) {
-    setcart(cart.map((item) =>
+  setcart((prev) => {
+    const existingitem = prev.find((item) =>
       item.id === product.id &&
       item.size === product.size &&
       item.selectedColor === product.selectedColor
-        ? { ...item, qty: item.qty + 1 }
-        : item
-    ))
-  } else {
-    setcart([...cart, { ...product }])
-  }
+    )
+
+    if (existingitem) {
+      return prev.map((item) =>
+        item.id === product.id &&
+        item.size === product.size &&
+        item.selectedColor === product.selectedColor
+          ? { ...item, qty: item.qty + 1 }
+          : item
+      )
+    } else {
+      return [...prev, { ...product, qty: 1 }]
+    }
+  })
 }
 
    const handleincrease=(id)=>{
@@ -82,7 +87,7 @@ const App = () => {
         <Route path='/men' element={<Men/>}/>
         <Route path='/men/mshirt' element={<Mshirt/>}></Route>
         <Route path='/men/mpant' element={<Mpant/>}></Route>
-        <Route path='/men/mt-shirt' element={<Mtshirt/>}></Route>
+        <Route path='/men/mtshirt' element={<Mtshirt/>}></Route>
         <Route path='/men/mkurtas' element={<Mkurtas/>}></Route>
         <Route path='/women' element={<Women/>}/>
         <Route path='/women/wsaree' element={<Wsaree/>}/>
@@ -98,7 +103,11 @@ const App = () => {
         <Route path='/kids/kgirl3' element={<Kgirl3/>}/>
         <Route path='/men/mshirt/:id' element={<Mshirtdetails  add={handleadd}/>}/>
         <Route path='/men/mpant/:id' element={<Mpantdetails  add={handleadd}/>}/>
-        <Route path='/men/mt-shirt/:id' element={<Mtshirtdetails  add={handleadd}/>}/>
+        <Route path='/men/mtshirt/:id' element={<Mtshirtdetails  add={handleadd}/>}/>
+        <Route path='/women/wsaree/:id' element={<Wsareedetails  add={handleadd}/>}/>
+        <Route path='/women/wtops/:id' element={<Wtopsdetails  add={handleadd}/>}/>
+        <Route path='/women/wfrock/:id' element={<Wfrockdetails  add={handleadd}/>}/>
+        <Route path='/kids/kboy1/:id' element={<Kboy1details  add={handleadd}/>}/>
         <Route path='/cart' element={<Cart cart={cart} increment={handleincrease}  decrement={handledecrease}   remove={handleremove}/>}/>
         <Route path='/checkout' element={<Checkout cart={cart}  setcart={setcart}/>}/>
         <Route path='/success' element={<Success/>}/>

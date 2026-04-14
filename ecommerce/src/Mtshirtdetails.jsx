@@ -16,32 +16,32 @@ const Mtshirtdetails = ({add}) => {
 
       const handlecart=()=>{
 
-        if(!size){
-          alert("please select size")
-          return
-        }
+  if(!size){
+    alert("please select size")
+    return
+  }
 
-
-        if(!added){
-          setadded(true)
-          setqty(1)
-          add({
-            ...product,
-            size,
-            qty:1,
-            selectedColor: selectedcolor 
-          })
-        }  else  {
-          navigate("/cart")
-        }
-      }
+  if(!added){
+    setadded(true)
+    setqty(1)
+    add({
+      ...product,
+      size,
+      qty:1,
+      selectedColor: selectedcolor,
+      image: currentImages[index]
+    })
+  } else {
+    navigate("/cart")
+  }
+}
 
       const sizes=["S","M","L" ,"XL"]
 
       const products=[
        {
         id:"mt1",
-        text:"men slim fit cotton pant",
+        text: "men solid cotton t-shirt",
         rating:4.2,
         reviews:"(323 views)" ,
         price:499,
@@ -53,135 +53,127 @@ const Mtshirtdetails = ({add}) => {
                     "/mtshirt1yellow-2.png",
                     "/mtshirt1yellow-3.png"
                  ],
-                 darkblue: [
-                   "/mpant1blue-1.png",
-                   "/mpant1blue-2.png",
-                   "/mpant1blue-3.png"
+                 lightgreen: [
+                   "/mtshirt1green-1.png",
+                    "/mtshirt1green-2.png",
+                    "/mtshirt1green-3.png"
                  ],
-                 green: [
-                   "/mpant1green-1.png",
-                   "/mpant1green-2.png",
-                   "/mpant1green-3.png"
+                 darkviolet: [
+                   "/mtshirt1violet-1.png",
+                    "/mtshirt1violet-2.png",
+                    "/mtshirt1violet-3.png"
                  ]
              
         },
 
-        fabric:"100% cotton",
-        fit:"slim fit",
-        waist:"mid rise",
-        length:"full length",
-        pattern:"solid",
-        closure:"button & zip",
-        occasion:"casual wear"
+        fabric: "100% breathable cotton",
+        fit: "regular fit",
+        sleeve: "half sleeve",
+        pattern: "solid",
+        occasion: "daily wear / casual wear"
       
       },
       {
         id:"mt2",
-        text:"men slim fit denim jeans",
-        rating:5,
-        reviews:"(588 views)" ,
-        price:1399,
+        text: "men solid polo neck cotton t-shirt",
+        rating:3.7,
+        reviews:"(288 views)" ,
+        price:379,
         colors: {
             
-                 darkblue: [
-                    "/mpant2blue-1.png",
-                    "/mpant2blue-2.png",
-                    "/mpant2blue-3.png"
+                 darkred: [
+                    "/mtshirt2red-1.png",
+                    "/mtshirt2red-2.png",
+                    "/mtshirt2red-3.png"
+                 ],
+                 pink: [
+                   "/mtshirt2pink-1.png",
+                    "/mtshirt2pink-2.png",
+                    "/mtshirt2pink-3.png"
                  ],
                  grey: [
-                   "/mpant2grey-1.png",
-                    "/mpant2grey-2.png",
-                    "/mpant2grey-3.png"
-                 ],
-                 black: [
-                   "/mpant2black-1.png",
-                    "/mpant2black-2.png",
-                    "/mpant2black-3.png"
+                   "/mtshirt2grey-1.png",
+                    "/mtshirt2grey-2.png",
+                    "/mtshirt2grey-3.png"
                  ]
              
         },
 
 
-        fabric:"denim",
-        fit:"slim fit",
-        waist:"mid rise",
-        length:"full length",
-        pattern:"solid",
-        closure:"button & zip",
-        occasion:"casual wear"
+        fabric: "100% premium breathable cotton",
+        fit: "regular fit",
+        sleeve: "half sleeve",
+        pattern: "solid",
+        occasion: "casual wear / office wear"
       
       },
 
         {
         id:"mt3",
-        text:"men solid track pant",
-        rating:3.9,
-        reviews:"(282 views)" ,
-        price:690,
+        text: "men printed cotton t-shirt",
+        rating:4.3,
+        reviews:"(382 views)" ,
+        price:430,
        colors: {
             
-                darkred: [
-                    "/mpant3red-1.png",
-                    "/mpant3red-2.png",
-                    "/mpant3red-3.png"
+               black: [
+                    "/mtshirt3black-1.png",
+                    "/mtshirt3black-2.png",
+                    "/mtshirt3black-3.png"
                  ],
-                 black: [
-                   "/mpant3black-1.png",
-                    "/mpant3black-2.png",
-                    "/mpant3black-3.png"
+                 white: [
+                   "/mtshirt3white-1.png",
+                    "/mtshirt3white-2.png",
+                    "/mtshirt3white-3.png"
                  ],
                  blue: [
-                   "/mpant3blue-1.png",
-                   "/mpant3blue-2.png",
-                   "/mpant3blue-3.png"
+                   "/mtshirt3blue-1.png",
+                    "/mtshirt3blue-2.png",
+                    "/mtshirt3blue-3.png"
                  ]
              
         },
 
-        fabric:"polyester blend",
-        fit:"regular fit",
-        waist:"elastic waistband",
-        length:"full length",
-        pattern:"solid",
-        closure:"drawstring",
-        occasion:"sports & daily wear"
-      
+        fabric: "100% premium breathable cotton",
+        fit: "regular fit",
+        sleeve: "half sleeve",
+        pattern: "printed",
+        occasion: "casual wear / daily wear"
+              
       },
       {
 
        id:"mt4",
-        text:"men cotton casual trousers",
+        text: "men solid full sleeve cotton t-shirt",
         rating:4.7,
         reviews:"(390 views)" ,
-        price:899,
+        price:549,
         colors: {
             
-                darkgreen: [
-                    "/mpant4green-1.png",
-                    "/mpant4green-2.png",
-                    "/mpant4green-3.png"
+                 pink: [
+                    "/mtshirt4pink-1.png",
+                    "/mtshirt4pink-2.png",
+                    "/mtshirt4pink-3.png"
                  ],
-                 lightyellow: [
-                   "/mpant4yellow-1.png",
-                    "/mpant4yellow-2.png",
-                    "/mpant4yellow-3.png"
+                 darkviolet: [
+                   "/mtshirt4violet-1.png",
+                    "/mtshirt4violet-2.png",
+                    "/mtshirt4violet-3.png"
                  ],
-                 black: [
-                   "/mpant4black-1.png",
-                    "/mpant4black-2.png",
-                    "/mpant4black-3.png"
+                 brown: [
+                   "/mtshirt4brown-1.png",
+                    "/mtshirt4brown-2.png",
+                    "/mtshirt4brown-3.png"
                  ]
              
         },
 
 
-        fabric:"cotton blend",
-        fit:"regular fit",
-        waist:"mid rise",
-        length:"full length",
-        pattern:"solid",
-        closure:"button & zip",
-        occasion:"casual & office wear"
+        fabric: "100% soft breathable cotton",
+        fit: "regular fit",
+        sleeve: "full sleeve",
+        pattern: "solid",
+        occasion: "casual wear / daily wear / light winter wear"
       
       }
     
@@ -253,10 +245,8 @@ const currentImages = selectedcolor && product.colors[selectedcolor]
               <h4>product details</h4>
               <p><span>fabric  : </span>{product.fabric}</p>
               <p><span>fit  : </span>{product.fit}</p>
-              <p><span>waist  : </span>{product.waist}</p>
-              <p><span>length  : </span>{product.length}</p>
+              <p><span>sleeve  : </span>{product.sleeve}</p>
               <p><span>pattern  : </span>{product.pattern}</p>
-              <p><span>closure  : </span>{product.closure}</p>
               <p><span>occasion  : </span>{product.occasion}</p>
             </div>
            <h3> <span>selected color : </span>{selectedcolor}</h3>
