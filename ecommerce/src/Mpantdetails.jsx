@@ -1,5 +1,7 @@
 import React, { useState ,useEffect} from 'react'
 import './Mpantdetails.css'
+import BackButton from './BackButton'
+import Footer from './Footer'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
 
 const Mpantdetails = ({add}) => {
@@ -211,6 +213,7 @@ const currentImages = selectedcolor && product.colors[selectedcolor]
 
   return (
     <>
+    <BackButton/>
     <div className="mpantdetails-outer">
         <div className="left">
           <div className="small">
@@ -319,6 +322,7 @@ const currentImages = selectedcolor && product.colors[selectedcolor]
             </div>
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

@@ -7,12 +7,10 @@ import Men from './Men';
 import Mshirt from './Mshirt';
 import Mpant from './Mpant';
 import Mtshirt from './Mtshirt';
-import Mkurtas from './Mkurtas';
 import Women from './Women';
 import Wsaree from './Wsaree';
 import Wtops from './Wtops';
 import Wfrock from './Wfrock';
-import Wlehanga from './Wlehanga';
 import Kids from './Kids';
 import Kboy1 from './Kboy1';
 import Kboy2 from './Kboy2';
@@ -27,9 +25,15 @@ import Wsareedetails from './Wsareedetails';
 import Wtopsdetails from './Wtopsdetails';
 import Wfrockdetails from './Wfrockdetails';
 import Kboy1details from './Kboy1details';
+import Kboy2details from './Kboy2details';
+import Kboy3details from './Kboy3details';
+import Kgirl1details from './Kgirl1details';
+import Kgirl2details from './Kgirl2details';
+import Kgirl3details from './Kgirl3details';
 import Cart from './Cart';
 import Checkout from './Checkout';
 import Success from './Success';
+import Footer from './Footer';
 
 
 
@@ -88,12 +92,10 @@ const App = () => {
         <Route path='/men/mshirt' element={<Mshirt/>}></Route>
         <Route path='/men/mpant' element={<Mpant/>}></Route>
         <Route path='/men/mtshirt' element={<Mtshirt/>}></Route>
-        <Route path='/men/mkurtas' element={<Mkurtas/>}></Route>
         <Route path='/women' element={<Women/>}/>
         <Route path='/women/wsaree' element={<Wsaree/>}/>
         <Route path='/women/wtops' element={<Wtops/>}/>
         <Route path='/women/wfrock' element={<Wfrock/>}/>
-        <Route path='/women/wlehanga' element={<Wlehanga/>}/>
         <Route path='/kids' element={<Kids/>}/>
         <Route path='/kids/kboy1' element={<Kboy1/>}/>
         <Route path='/kids/kboy2' element={<Kboy2/>}/>
@@ -108,11 +110,17 @@ const App = () => {
         <Route path='/women/wtops/:id' element={<Wtopsdetails  add={handleadd}/>}/>
         <Route path='/women/wfrock/:id' element={<Wfrockdetails  add={handleadd}/>}/>
         <Route path='/kids/kboy1/:id' element={<Kboy1details  add={handleadd}/>}/>
+        <Route path='/kids/kboy2/:id' element={<Kboy2details  add={handleadd}/>}/>
+        <Route path='/kids/kboy3/:id' element={<Kboy3details  add={handleadd}/>}/>
+        <Route path='/kids/kgirl1/:id' element={<Kgirl1details  add={handleadd}/>}/>
+        <Route path='/kids/kgirl2/:id' element={<Kgirl2details  add={handleadd}/>}/>
+        <Route path='/kids/kgirl3/:id' element={<Kgirl3details  add={handleadd}/>}/>
         <Route path='/cart' element={<Cart cart={cart} increment={handleincrease}  decrement={handledecrease}   remove={handleremove}/>}/>
         <Route path='/checkout' element={<Checkout cart={cart}  setcart={setcart}/>}/>
         <Route path='/success' element={<Success/>}/>
         
       </Routes>
+      
     </BrowserRouter>
   )
 }

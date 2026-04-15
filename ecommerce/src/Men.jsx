@@ -1,5 +1,6 @@
 import React from 'react'
 import './Men.css';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Men = () => {
@@ -14,7 +15,6 @@ const Men = () => {
     {img:"/mshirt.png",text:"shirt",path:"/men/mshirt"},
     {img:"/mpant.png",text:"pant",path:"/men/mpant"},
     {img:"/mt-shirt.png",text:"t-shirt",path:"/men/mtshirt"},
-    {img:"/mkurtas.png",text:"kurtas",path:"/men/mkurtas"},
    ]
   return (
     <>
@@ -38,6 +38,7 @@ const Men = () => {
         
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

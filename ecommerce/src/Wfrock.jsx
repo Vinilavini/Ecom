@@ -1,5 +1,7 @@
 import React from 'react'
 import './Wfrock.css';
+import BackButton from './BackButton';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Wfrock = () => {
@@ -12,6 +14,7 @@ const Wfrock = () => {
     ]
   return (
     <>
+    <BackButton/>
      <div className="wfrock-outer">
         <h1>women frock collections</h1>
        {wfrock.map((item,index)=>
@@ -28,6 +31,7 @@ const Wfrock = () => {
        )}
       
      </div> 
+     <Footer/>
     </>
   )
 }

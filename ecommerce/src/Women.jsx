@@ -1,5 +1,6 @@
 import React from 'react'
 import './Women.css';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Women = () => {
@@ -14,7 +15,6 @@ const Women = () => {
     {img:"/wsaree.png",text:"saree",path:"/women/wsaree"},
     {img:"/wtops.png",text:"tops",path:"/women/wtops"},
     {img:"/wfrock.png",text:"frock",path:"/women/wfrock"},
-    {img:"/wlehanga.png",text:"lehanga",path:"/women/wlehanga"},
    ]
   return (
     <>
@@ -38,6 +38,7 @@ const Women = () => {
         
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

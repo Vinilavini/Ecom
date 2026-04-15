@@ -1,5 +1,6 @@
 import React from 'react'
 import './Kids.css';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Kids = () => {
@@ -61,6 +62,7 @@ const Kids = () => {
         
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

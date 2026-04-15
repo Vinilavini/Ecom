@@ -1,5 +1,7 @@
 import React from 'react'
 import './Wtops.css';
+import BackButton from './BackButton';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Wtops = () => {
@@ -12,6 +14,7 @@ const Wtops = () => {
     ]
   return (
     <>
+    <BackButton/>
      <div className="wtops-outer">
         <h1>women tops collections</h1>
        {wtops.map((item,index)=>
@@ -28,6 +31,7 @@ const Wtops = () => {
        )}
       
      </div> 
+     <Footer/>
     </>
   )
 }

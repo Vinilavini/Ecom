@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Mshirtdetails.css'
+import BackButton from './BackButton'
+import Footer from './Footer'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
 
 const Mshirtdetails = ({add}) => {
@@ -194,6 +196,7 @@ const Mshirtdetails = ({add}) => {
 
   return (
     <>
+     <BackButton/>
     <div className="mshirtdetails-outer">
         <div className="left">
           <div className="small">
@@ -297,6 +300,7 @@ const Mshirtdetails = ({add}) => {
             </div>
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

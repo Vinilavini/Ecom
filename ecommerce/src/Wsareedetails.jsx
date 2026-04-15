@@ -1,5 +1,7 @@
 import React, { useState ,useEffect} from 'react'
 import './Wsareedetails.css'
+import BackButton from './BackButton'
+import Footer from './Footer'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
 
 const Wsareedetails = ({add}) => {
@@ -207,6 +209,7 @@ const currentImages = selectedcolor && product.colors[selectedcolor]
 
   return (
     <>
+    <BackButton/>
     <div className="wsareedetails-outer">
         <div className="left">
           <div className="small">
@@ -314,6 +317,7 @@ const currentImages = selectedcolor && product.colors[selectedcolor]
             </div>
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

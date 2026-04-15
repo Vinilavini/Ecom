@@ -1,5 +1,7 @@
 import React from 'react'
 import './Cart.css';
+import BackButton from './BackButton';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Cart = ({cart,increment,decrement,remove}) => {
@@ -11,6 +13,7 @@ const Cart = ({cart,increment,decrement,remove}) => {
     const total=totalprice+ shipping+platform;
   return (
     <>
+    <BackButton/>
       <div className="cart-outer">
 
          {cart.length === 0  ?  (
@@ -95,6 +98,7 @@ const Cart = ({cart,increment,decrement,remove}) => {
         </>
         )}
       </div>
+      <Footer/>
     </>
   )
 }

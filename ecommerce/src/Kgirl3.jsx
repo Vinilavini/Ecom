@@ -1,5 +1,7 @@
 import React from 'react'
 import './Kgirl3.css';
+import BackButton from './BackButton';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Kgirl3 = () => {
@@ -12,6 +14,7 @@ const Kgirl3 = () => {
     ]
   return (
     <>
+    <BackButton/>
      <div className="kgirl3-outer">
         <h1>kids dress  collections</h1>
        {kgirl3.map((item,index)=>
@@ -28,6 +31,7 @@ const Kgirl3 = () => {
        )}
       
      </div> 
+     <Footer/>
     </>
   )
 }

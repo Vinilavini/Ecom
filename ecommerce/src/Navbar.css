@@ -1,9 +1,7 @@
-
 .nav{
   height: 80px;
   width: 100%;
   background-color: white;
-  /* margin-top: 40px; */
   box-shadow: 2px 2px 2px 1.5px black;
 
   display: flex;
@@ -14,60 +12,106 @@
   top: 0;
   z-index: 1000;
   left: 0;
-
 }
 
+/* logo */
 .nav > h2{
    padding-left: 30px;
    font-weight: bold;
    text-transform: capitalize;
    font-size: 30px;
    font-family: cursive,sans-serif;
-
 }
 
+/* menu container */
 .nav > .inner{
     display: flex;
     gap: 130px;
     font-weight: bold;
     text-transform: capitalize;
     font-size: 21px;
-    
 }
 
-.nav > .inner > span > a{
+/* dropdown parent */
+.menu{
+    position: relative;
+}
+
+/* dropdown box */
+.dropdown{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: rgb(241, 239, 239);
+    padding: 12px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 150px;
+
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+/* show dropdown */
+.menu:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* dropdown links */
+.dropdown a{
     text-decoration: none;
     color: black;
-
+    font-size: 16px;
 }
 
-.nav > .inner > span > a.active{
-    border-bottom: 2px solid rgb(100, 98, 98);
-    padding-bottom: 4px;
+.dropdown a:hover{
+    color: grey;
 }
 
-.nav > .inner > span >a:hover{
-    color: rgb(77, 72, 72);
+/* main menu links */
+.nav > .inner > .menu > a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav > .inner > .menu > a:hover{
     border-bottom: 2px solid black;
     padding-bottom: 4px;
 }
 
+.nav > .inner > .menu > a.active{
+    border-bottom: 2px solid grey;
+    padding-bottom: 4px;
+}
+
+/* cart */
+.nav > h3{
+  margin-right: 40px;
+}
+
 .nav > h3 > span > a{
-     text-decoration: none;
+    text-decoration: none;
     color: black;
     font-weight: bold;
     text-transform: capitalize;
     font-size: 21px;
-    margin-right: 40px;
-}
-
-.nav > h3 > span > a.active{
-     border-bottom: 2px solid rgb(100, 98, 98);
-    padding-bottom: 4px;
 }
 
 .nav > h3 > span > a:hover{
-    color: rgb(77, 72, 72);
     border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}
+
+.nav > h3 > span > a.active{
+    border-bottom: 2px solid grey;
     padding-bottom: 4px;
 }

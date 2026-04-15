@@ -1,5 +1,7 @@
 import React, { useState ,useEffect} from 'react'
 import './Kboy1details.css'
+import BackButton from './BackButton'
+import Footer from './Footer'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
 
 const Kboy1details = ({add}) => {
@@ -192,6 +194,7 @@ const currentImages = selectedcolor && product.colors[selectedcolor]
 
   return (
     <>
+    <BackButton/>
     <div className="kboy1details-outer">
         <div className="left">
           <div className="small">
@@ -300,6 +303,7 @@ const currentImages = selectedcolor && product.colors[selectedcolor]
             </div>
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

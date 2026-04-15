@@ -1,5 +1,7 @@
 import React from 'react'
 import './Wsaree.css';
+import BackButton from './BackButton';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Wsaree = () => {
@@ -12,6 +14,7 @@ const Wsaree = () => {
     ]
   return (
     <>
+    <BackButton/>
      <div className="wsaree-outer">
         <h1>women saree collections</h1>
        {wsarees.map((item,index)=>
@@ -28,6 +31,7 @@ const Wsaree = () => {
        )}
       
      </div> 
+     <Footer/>
     </>
   )
 }

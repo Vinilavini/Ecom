@@ -1,5 +1,7 @@
 import React from 'react'
 import './Mtshirt.css';
+import BackButton from './BackButton';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Mtshirt = () => {
@@ -12,6 +14,7 @@ const Mtshirt = () => {
     ]
   return (
     <>
+    <BackButton/>
      <div className="mtshirt-outer">
         <h1>men t-shirt collections</h1>
        {mtshirts.map((item,index)=>
@@ -28,6 +31,7 @@ const Mtshirt = () => {
        )}
       
      </div> 
+     <Footer/>
     </>
   )
 }

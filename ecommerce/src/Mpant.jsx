@@ -1,5 +1,7 @@
 import React from 'react'
 import './Mpant.css';
+import BackButton from './BackButton';
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Mpant = () => {
@@ -12,6 +14,7 @@ const Mpant = () => {
     ]
   return (
     <>
+    <BackButton/>
      <div className="mpant-outer">
         <h1>men pant collections</h1>
        {mpants.map((item,index)=>
@@ -28,6 +31,7 @@ const Mpant = () => {
        )}
       
      </div> 
+     <Footer/>
     </>
   )
 }

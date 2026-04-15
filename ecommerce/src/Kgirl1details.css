@@ -1,0 +1,348 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+button{
+  cursor:pointer;
+}
+
+/* MAIN WRAPPER */
+.kgirl1details-outer{
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+
+    padding: 120px 20px 40px;
+    background-color: rgb(230, 241, 228);
+}
+
+/* LEFT + RIGHT FLEX */
+.kgirl1details-outer > .left,
+.kgirl1details-outer > .right{
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* LEFT BOX */
+.kgirl1details-outer > .left{
+    display: flex;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* THUMBNAILS */
+.kgirl1details-outer > .left > .small{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.kgirl1details-outer > .left > .small > img{
+    width: 90px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.kgirl1details-outer > .left > .small > img:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 1px black;
+}
+
+.kgirl1details-outer > .left > .small > img.active{
+    border: 2px solid black;
+}
+
+/* MAIN IMAGE */
+
+.kgirl1details-outer > .left > .main{
+  width:100%;
+  height:520px;
+  overflow:hidden;
+  border-radius:12px;
+}
+.kgirl1details-outer > .left > .main > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: zoom-in;
+}
+
+.kgirl1details-outer > .left > .main img:hover{
+    transform: scale(1.25);
+}
+
+/* RIGHT BOX */
+.kgirl1details-outer > .right{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* TITLE */
+.kgirl1details-outer > .right > h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* REVIEWS */
+.kgirl1details-outer > .right > .reviews{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+.kgirl1details-outer > .right > .reviews > .star{
+    color: gold;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+}
+
+.kgirl1details-outer > .right > .reviews > .star.white{
+    color: white;
+}
+
+.kgirl1details-outer> .right > .reviews > span{
+    font-size: 16px;
+    
+}
+
+/* PRICE */
+.kgirl1details-outer >.right > h2{
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+/* DETAILS */
+.kgirl1details-outer > .right > .details{
+    margin-top: 15px;
+}
+
+.kgirl1details-outer > .right > .details > h4{
+    border-bottom:2px solid black;
+    padding-bottom: 2px;
+    display:inline-block;
+    margin-bottom:10px;
+    font-size: 18px;
+}
+
+.kgirl1details-outer > .right > .details > p{
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 4px;
+    font-weight: lighter;
+}
+
+.kgirl1details-outer > .right > .details > p > span{
+  font-weight: 600;
+}
+
+.kgirl1details-outer > .right > h3{
+  margin-top: 10px;
+  color: rgb(49, 48, 48);
+}
+
+.kgirl1details-outer > .right > h3 > span{
+    font-size: 18px;
+    color: blue;
+}
+/* COLORS */
+.kgirl1details-outer > .right > .color-container{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+
+.kgirl1details-outer > .right > .color-container > .clr{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  border:1.8px solid black;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.kgirl1details-outer > .right > .color-container > .clr:hover{
+  transform:scale(1.1);
+  border: 1.9px solid black;
+}
+
+.kgirl1details-outer > .right > .color-container > .clr.active{
+  transform: scale(1.10);
+  border: 2px solid black;
+}
+
+/* SIZES */
+
+.kgirl1details-outer > .right > h4{
+  margin-top: 13px;
+  color: rgb(22, 22, 237);
+}
+.kgirl1details-outer > .right > .sizes{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+  flex-wrap:wrap;
+}
+
+.kgirl1details-outer > .right > .sizes > button{
+  padding:6px 12px;
+  border:1.3px solid black;
+  background:white;
+  border-radius:5px;
+  transition:.2s;
+}
+
+.kgirl1details-outer > .right > .sizes > button:hover{
+  background:#3e3d3d;
+  color: white;
+  border: 1.5px solid black;
+}
+
+.kgirl1details-outer > .right > .sizes > button.active{
+  background:black;
+  color:white;
+  font-weight: bold;
+}
+
+.kgirl1details-outer > .right > .quantity{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.kgirl1details-outer > .right > .quantity > p{
+  font-size: 18px;
+  color: rgb(25, 170, 12);
+  letter-spacing: 0.4px;
+}
+
+.kgirl1details-outer > .right > .quantity > .qty{
+  display: flex;
+  gap: 7px;
+}
+
+.kgirl1details-outer > .right > .quantity >.qty > #b3,#b5{
+  height: 25px;
+  width: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.kgirl1details-outer > .right > .quantity >.qty > #b3:hover,#b5:hover{
+  background-color: #ccc;
+}
+
+.kgirl1details-outer > .right > .quantity >.qty > #b4{
+  height: 25px;
+  width: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid black;
+  
+
+}
+
+/* BUTTONS */
+.kgirl1details-outer > .right > .btns{
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+}
+
+.kgirl1details-outer > .right > .btns > #b1{
+  flex:1;
+  padding:12px;
+  border:1px solid black;
+  background:#eee;
+  border-radius:8px;
+  font-weight:bold;
+  font-size: 18px;
+  transition:.3s;
+}
+
+.kgirl1details-outer > .right > .btns > #b1:hover{
+  background:#ffd600;
+  transform:translateY(-2px);
+}
+
+.kgirl1details-outer > .right > .btns > a > #b2{
+  flex:1;
+  padding:12px;
+  background:black;
+  color:white;
+  border-radius:8px;
+  border:none;
+  transition:.3s;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.kgirl1details-outer > .right > .btns > a> #b2:hover{
+  background:#1565c0;
+  transform:translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width:1024px){
+.kgirl1details-outer{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .left,
+  .right{
+    max-width:100%;
+  }
+}
+
+@media (max-width:768px){
+ .kgirl1details-outer{
+    padding:90px 10px;
+  }
+
+  .left{
+    flex-direction:column;
+  }
+
+  .small{
+    flex-direction:row;
+  }
+
+  .small img{
+    width:70px;
+    height:80px;
+  }
+}

@@ -11,23 +11,28 @@
     height: 500px;
     width: 100%;
     background-color: white;
-    position: relative;
-    /* background: linear-gradient(to right,rgb(238, 244, 248),rgb(215, 231, 233)); */
-    background-image: url('/bg1.png');
+    position: relative; 
 }
 
-.home-outer > .banner > img{
+.home-outer > .banner.center > img{
     
     height: 490px;
     width: 500px;
     object-fit: cover;
 
-    position: absolute;
+    position: static;
     bottom: 4px;
     left: 40px;
 }
 
-.home-outer > .banner > h2{
+.home-outer > .banner.center > .text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.home-outer > .banner.center > .text-area > h2{
     
     position: absolute;
     top: 130px;
@@ -40,7 +45,7 @@
     word-spacing: 20px;
 }
 
-.home-outer > .banner > a > button{
+.home-outer > .banner.center >  .text-area > a > button{
     position: absolute;
     top :250px;
     right: 43%;
@@ -56,9 +61,162 @@
 
 }
 
-.home-outer > .banner > a > button:hover{
+.home-outer > .banner.center > .text-area > a > button:hover{
    background-color: rgb(51, 48, 48);
 }
+
+
+.home-outer > .banner.right{
+    position: relative;
+    display: flex;
+    
+}
+.home-outer > .banner.right > img{
+    position: absolute;
+    left: -30px;   /* left remove */
+    bottom: -30px;     /* top remove */
+
+    height: 95%;
+    width: auto;
+    object-fit: contain;
+}
+
+.home-outer > .banner.right > .text-area > h2{
+    
+    position: absolute;
+    top: 130px;
+    right: 23%;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: cursive, sans-serif,popins;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+    color: red;
+}
+
+.home-outer > .banner.right > .text-area > h3{
+    
+    position: absolute;
+    top: 230px;
+    right: 23%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-family: popins, sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+    color: rgb(245, 197, 5);
+}
+
+.home-outer > .banner.right >  .text-area > a > button{
+    position: absolute;
+    top :300px;
+    right: 37%;
+    height: 45px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.home-outer > .banner.right > .text-area > a > button:hover{
+   background-color: rgb(51, 48, 48);
+}
+
+.home-outer > .banner.left{
+    position: relative;
+    display: flex;
+    
+}
+.home-outer > .banner.left > img{
+    position: absolute;
+    left: 20%;   /* left remove */
+    bottom: 30px;     /* top remove */
+
+    height: 70%;
+    width: 80%;
+    object-fit: cover;
+    
+}
+
+.home-outer > .banner.left > .text-area > h2{
+    
+    position: absolute;
+    top: 190px;
+    right: 18%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: cursive, sans-serif,popins;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+   z-index: 1;
+}
+
+.home-outer > .banner.left > .text-area > h3{
+    
+    position: absolute;
+    top: 250px;
+    right: 23%;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform:capitalize;
+    font-family: cursive,popins, sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+    color: rgb(208, 70, 194);
+    z-index: 1;
+}
+
+.home-outer > .banner.left >  .text-area > a > button{
+    position: absolute;
+    top :320px;
+    right: 37%;
+    height: 43px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+
+    z-index: 1;
+
+}
+
+.home-outer > .banner.left> .text-area > a > button:hover{
+   background-color: rgb(51, 48, 48);
+}
+
+.home-outer > .banner > .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+   
+    display: flex;
+    gap: 6px;
+}
+
+.home-outer > .banner > .dots > .dot{
+    height: 7px;
+    width: 7px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.home-outer > .banner > .dots > .dot.active{
+    background-color: rgb(244, 168, 168);
+}
+
 
 .home-outer > .category{
     display: flex;
@@ -106,3 +264,77 @@
     padding-top: 20px;
 }
 
+
+
+@media (max-width:768px){
+
+.home-outer{
+    padding-top: 90px;
+}
+
+.home-outer > .banner{
+    height: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-outer > .banner .text-area{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+/* image */
+.home-outer > .banner img{
+    position: static !important;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* text */
+.home-outer > .banner .text-area h2{
+    position: static !important;
+    font-size: 26px !important;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.home-outer > .banner .text-area h3{
+    position: static !important;
+    font-size: 18px !important;
+    text-align: center;
+}
+
+/* button */
+.home-outer > .banner .text-area button{
+    position: static !important;
+    margin-top: 15px;
+}
+
+/* dots center */
+.home-outer > .banner > .dots{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* category */
+.home-outer > .category{
+    gap: 30px;
+}
+
+.home-outer > .category > .inner > a > img{
+    height: 150px;
+    width: 130px;
+}
+
+.home-outer > .category > h2{
+    font-size: 26px;
+}
+
+}
